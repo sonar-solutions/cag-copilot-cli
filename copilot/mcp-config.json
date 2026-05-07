@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "sonarqube": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm", "--init", "--pull=always",
+        "-e", "SONARQUBE_TOKEN",
+        "-e", "SONARQUBE_ORG",
+        "-e", "SONARQUBE_PROJECT_KEY",
+        "-v", "<ABSOLUTE_PATH_TO_YOUR_PROJECT>:/app/mcp-workspace:rw",
+        "mcp/sonarqube"
+      ],
+      "env": {
+        "SONARQUBE_ORG": "<YourOrganizationKey>",
+        "SONARQUBE_PROJECT_KEY": "<YourProjectKey>"
+      }
+    }
+  }
+}
