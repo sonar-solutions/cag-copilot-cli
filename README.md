@@ -1,5 +1,7 @@
 # Harnessing Sonar Context Augmentation with GitHub Copilot CLI
 
+> Last verified: May 2026
+
 ## TL;DR overview
 
 * GitHub Copilot CLI receives project-specific awareness through Sonar Context Augmentation via the SonarQube MCP Server; generated code adheres to your project's structure without excessive prompt engineering.
